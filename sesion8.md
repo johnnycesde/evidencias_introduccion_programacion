@@ -6,31 +6,105 @@
 
 <!-- Su documentación aquí -->
 
-```html
+# Actividad: Aplicando estilos con selectores CSS
+## El objetivo de esta actividad es crear la estructura HTML básica de una página web y aplicar diferentes selectores CSS para modificar su presentación.
+
+## Solución
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title style="color:brown"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad8</title>
+    <link rel="stylesheet" href="stylo.css">
 </head>
 
 <body>
+
     <header>
-        <h1 style="color:rgb(230, 0, 0)"> Aplicando estilos con selectores CSS</h1>
-        <p1 style="color:blue">El objetivo de esta actividad es crear la estructura HTML</p>
-            <p2 style="color:blue"> y aplicar diferentes selectores CSS para modificar su presentación.</p>
-                <p3 style="color:blue">CSS es un lenguaje de hojas de estilo que se utiliza para describir cómo se
-                    mostrará un documento
-                    HTML. CSS se aplica a un documento HTML en forma de hojas de estilo. </p>
-
-                    <img height="200" src="imagen4.jpg" style="border: 1px solid black;">
+        <h1>VIDEOJUEGOS CLÁSICOS</h1>
     </header>
-
-    <p style="color:brown">mi segundo parrafo</p>
+    <section>
+        <h3 class="destacado">Donkey Kong</h3>
+        <p>Donkey Kong es el primer juego creado por Shigeru Miyamoto y supuso la creación de dos de los personajes más
+            importantes de Nintendo: Mario y Donkey Kong.</p><br>
+        <h3 class="destacado">Pac-Man</h3>
+        <p>El popular comecocos llegó a las máquinas de arcade en 1980 y es uno de los juegos clásicos más importantes
+            de la
+            historia. Un sencillo juego en el que tan solo hay que ir recogiendo puntos y otros objetos hasta limpiar el
+            nivel y
+            pasar al siguiente.</p><br>
+        <h3 class="destacado">Super Mario Bros</h3>
+        <p>Super Mario Bros es el primer juego con Mario de protagonista. Desarrollado por Miyamoto y publicado por
+            Nintendo
+            para NES en 1985, se trata de un juego de plataformas que ha trascendido al medio y se ha convertido en todo
+            un
+            icono de la cultura popular.</p><br>
+    </section>
+    <div>
+        <p>Los recuerdas? Una década dorada que dio origen a multitud de clásicos</p>
+        <img src="img/Nintendo-Movil.jpg" alt="Imagen juegos clasicos">
+    </div>
     <footer>
-        <p>Pie de página</p>
+        <p class="grande">Gustavo Adolfo Vanegas Marin</p>
+        <p id="principal">Juegos clásicos de los 80s</p>
+        <p id="sombras">Copyright © 2023, My Website. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 
 </html>
-```java
+
+~~~
+
+### STYLO.CSS
+
+~~~css
+
+/*selectores de etiqueta*/
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+img {
+    border: 10px solid black;
+}
+
+/*seleccionadores de clase*/
+
+.destacado {
+    color: green;
+}
+
+.grande {
+    font-size: large;
+}
+
+/*seleccionadores de ID*/
+
+#principal {
+    color: yellow;
+}
+
+#sombras {
+    color: yellow;
+    font-weight: 900;
+    text-shadow: 3px 3px 0px green, 5px 5px 0px black;
+}
+
+/*seleccionadores descendientes*/
+div p {
+    color: gray;
+    text-align: center;
+}
+section h3, p {
+    text-align: center;
+}
+
+~~~
