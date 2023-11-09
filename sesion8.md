@@ -45,7 +45,7 @@
     </section>
     <div>
         <p>Los recuerdas? Una década dorada que dio origen a multitud de clásicos</p>
-        <img src="img/Nintendo-Movil.jpg" alt="Imagen juegos clasicos">
+        <img src="assets/character-l.png" alt="">
     </div>
     <footer>
         <p class="grande">Gustavo Adolfo Vanegas Marin</p>
