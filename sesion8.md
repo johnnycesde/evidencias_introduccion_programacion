@@ -48,7 +48,7 @@
         <img src="assets/character-l.png" alt="">
     </div>
     <footer>
-        <p class="grande">Gustavo Adolfo Vanegas Marin</p>
+        <p class="grande">johnny londoño henao</p>
         <p id="principal">Juegos clásicos de los 80s</p>
         <p id="sombras">Copyright © 2023, My Website. Todos los derechos reservados.</p>
     </footer>
